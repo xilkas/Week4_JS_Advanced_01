@@ -1,7 +1,7 @@
 
-# Javascript Scope, Closure, Callbacks and Advanced Array Methods
+# Javascript Closure, Callbacks and Advanced Array Methods
 
-With some basic JavaScript principles in hand, we can now expand our skills out even further by exploring Scope, Closure, Callbacks and Advanced Array Methods.  Finish each task in order as the concepts build on one another.
+With some basic JavaScript principles in hand, we can now expand our skills out even further by exploring Closure, Callbacks and Advanced Array Methods.  Finish each task in order as the concepts build on one another.
 
 ## Set Up The Project With Git
 
@@ -16,7 +16,7 @@ With some basic JavaScript principles in hand, we can now expand our skills out 
 
 ## MVP
 
-* [ ] Review the contents of the [scope_closure.js](scope_closure.js), [array_methods.js](array_methods.js), and [callbacks.js](callbacks.js)
+* [ ] Review the contents of the [closure.js](closure.js), [array_methods.js](array_methods.js), and [callbacks.js](callbacks.js)
 * [ ] Complete the problems provided to you but skip over stretch problems until you are complete with every other JS file first.
 
 ## Stretch Goals
