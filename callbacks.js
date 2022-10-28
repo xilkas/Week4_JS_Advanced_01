@@ -20,7 +20,6 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
   //First Problem
 
-const length =['4in','7in','10in'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
