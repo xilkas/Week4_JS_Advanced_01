@@ -54,30 +54,29 @@ const runners = [{"id":1,"first_name":"Charmain","last_name":"Seiler","email":"c
 
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs.  Combine both the first and last names into a new array called fullName. 
-let fullName = ['first_name','last_name'];
+// let fullName = ['first_name','last_name'];
 //  fullName.forEach((fullName,id,runners) => {
 //   console.log(fullName,id,runners);  
 // })
- fullName.forEach(function(fullName){
-     return fullName;
+const fullName = runners.forEach(function(fullName){
+  console.log (fullName.first_name, fullName.last_name);
+
  })
- console.log (fullName);
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
-let allCaps = ['first_name'];
 // let nameUppercase = allCaps.map(nameUppercase => allCaps.toUpperCase)
-let myFirstname = allCaps.map(function(first_name) {
-    return first_name.toUpperCase();
-   
+let allCaps = runners.map(function(item) {
+
+return item.first_name.toUpperCase(runners);
 })
-console.log(allCaps); 
+       console.log(allCaps); 
+
 
 // ==== Challenge 3: Use .filter() ====
 // The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
-let largeShirts = ['L'];
-largeShirts.filter((item)=> {
-    return item.shirt_size > largeShirts;
+let largeShirts = runners.filter((item)=> {
+    return item.shirt_size ==='L';
 })
 // runners.filter(shirt_size => runners.largeShirts('L'))
 
@@ -85,7 +84,8 @@ console.log(largeShirts);
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations into a ticketPriceTotal variable and log the result
-let ticketPriceTotal = []
-
-ticketPriceTotal.reduce(add(accumulator,donation,id,runners),0);
-console.log(ticketPriceTotal);
+// let ticketPriceTotal =runners.reduce(add(accumulator,donation,id,runners),0);
+let ticketPriceTotal = runners.reduce((total,donation) =>{
+    return total += donation.runners;
+}, 0)
+// console.log(ticketPriceTotal);
